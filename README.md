@@ -66,7 +66,9 @@ Với MacOS: Cài Git theo hướng dẫn [tại đây](https://hackernoon.com/i
 
 ## Code download
 
-Tốt rồi, nếu bạn đã làm đúng các bước. Thì hãy vào terminal, các lệnh sau sẽ download project này về máy của bạn:
+Tốt rồi, nếu bạn đã làm đúng các bước ở trên. Thì hãy vào terminal, các lệnh sau sẽ download code project về máy của bạn:
+
+Nó sẽ thành công nếu màn hình của bạn trông thế này.
 ```
 Tungs-MacBook-Pro:workspace tung$ mkdir -p ~/workspace && cd ~/workspace
 Tungs-MacBook-Pro:workspace tung$ git clone https://github.com/beecost/data_engineering && cd data_engineering
@@ -82,7 +84,7 @@ Tungs-MacBook-Pro:data_engineering tung$
 
 ## Code build
 
-Sau khi download code và vào thư mục code của project, hãy build bằng ant, như thế này là bạn đã thành công.
+Sau khi download code và vào thư mục code của project, hãy build bằng ant, nhìn như thế này là bạn đã thành công.
 ```
 # hãy chắc là bạn có code version mới nhất
 Tungs-MacBook-Pro:data_engineering tung$ git pull origin master
