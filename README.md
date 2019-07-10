@@ -6,7 +6,7 @@ Ngoại trừ các hình ảnh thuộc về thương hiệu của BeeCost, bạn
 
 BeeCost Team cũng rất mong các nhận xét và đóng góp từ các bạn.
 
-## Các phần mềm bạn cần có để chạy project này
+## Các phần mềm cần thiết
 
 Công cụ của project này chỉ dùng command line trên terminal của các hệ điều hành debian, ubuntu, mac, phần mềm java 8, ant và git. Có thể nói bài tập đầu tiên của bạn sẽ là cài đặt những phần mềm này, theo hướng dẫn ở bên dưới.
 
