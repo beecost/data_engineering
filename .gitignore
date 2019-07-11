@@ -1,0 +1,15 @@
+.idea/*
+*.class
+*.iml
+*.out
+*.gc
+/out/*
+*.DS_Store
+/eee
+/alldata/*
+/build/*
+/src/java-gen/*
+/*.log
+/*.iml
+/*.eml
+/logs/*

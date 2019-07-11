@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<project name="data_engineering" default="rebuild">
+
+	<property file="${basedir}/build.properties" />
+
+	<path id="classpath.compile">
+		<fileset dir="${lib.dir}" includes="**/*.jar" />
+	</path>
+
+	<!-- we use the same classpath as in bin/commons/java.sh -->
+	<path id="classpath.runtime">
+		<fileset dir="${build.dir}">
+			<include name="*.jar" />
+		</fileset>
+		<dirset dir="${conf.dir}" />
+		<path refid="classpath.compile" />
+	</path>
+
+	<target name="rebuild" depends="clean, jar">
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Stuff needed by all targets                                        -->
+	<!-- ================================================================== -->
+
+	<target name="set-version">
+		<exec outputproperty="project.version" executable="sh">
+			<arg value="-c" />
+			<arg value="if git rev-parse HEAD >/dev/null; then git rev-parse HEAD; else echo 'unknown'; fi" />
+		</exec>
+		<echo message="Version is set to ${project.version}"/>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes.dir}"/>
+		<mkdir dir="${src.java-gen.dir}"/>
+		<exec executable="sh">
+			<arg value="init.sh" />
+		</exec>
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Compile the Java files                                             -->
+	<!-- ================================================================== -->
+
+	<target name="compile" depends="init">
+		<javac
+				destdir="${build.classes.dir}"
+				encoding="${build.encoding}"
+				optimize="${javac.optimize}"
+				target="${javac.version}"
+				debug="${javac.debug}"
+				source="${javac.version}"
+				deprecation="${javac.deprecation}"
+				includeAntRuntime="false">
+			<src path="${src.java.dir}" />
+			<src path="${src.java-gen.dir}" />
+			<classpath refid="classpath.compile"/>
+		</javac>
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Builds jar                                                         -->
+	<!-- ================================================================== -->
+
+	<target name="jar" depends="init, set-version, compile">
+		<jar jarfile="${build.dir}/${project.name}-${project.version}.jar">
+			<fileset dir="${build.classes.dir}" />
+			<fileset dir="${base.dir}" includes="data/**" />
+		</jar>
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Clean.  Delete the build files, and their directories              -->
+	<!-- ================================================================== -->
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${src.java-gen.dir}"/>
+	</target>
+
+</project>

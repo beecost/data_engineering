@@ -1,0 +1,40 @@
+--- RawLocalFileSystem.java	2009-02-20 03:13:23.000000000 +0300
++++ RawLocalFileSystem.java	2010-01-27 13:53:25.000000000 +0300
+@@ -66,12 +66,17 @@ public class RawLocalFileSystem extends 
+   }
+   
+   class TrackingFileInputStream extends FileInputStream {
++		private File f;
++
+     public TrackingFileInputStream(File f) throws IOException {
+       super(f);
++			this.f = f;
+     }
+     
+     public int read() throws IOException {
++			long ts = System.currentTimeMillis();
+       int result = super.read();
++			System.out.println("IOSEQ readu bytes:1 millis:" + (System.currentTimeMillis()-ts) + " file:" + f);
+       if (result != -1) {
+         statistics.incrementBytesRead(1);
+       }
+@@ -79,7 +84,9 @@ public class RawLocalFileSystem extends 
+     }
+     
+     public int read(byte[] data) throws IOException {
++			long ts = System.currentTimeMillis();
+       int result = super.read(data);
++			System.out.println("IOSEQ read bytes:" + data.length + " millis:" + (System.currentTimeMillis()-ts) + " file:" + f);
+       if (result != -1) {
+         statistics.incrementBytesRead(result);
+       }
+@@ -87,7 +94,9 @@ public class RawLocalFileSystem extends 
+     }
+     
+     public int read(byte[] data, int offset, int length) throws IOException {
++			long ts = System.currentTimeMillis();
+       int result = super.read(data, offset, length);
++			System.out.println("IOSEQ read3 bytes:" + data.length + " millis:" + (System.currentTimeMillis()-ts) + " file:" + f);
+       if (result != -1) {
+         statistics.incrementBytesRead(result);
+       }
