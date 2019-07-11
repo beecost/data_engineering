@@ -84,7 +84,9 @@ Tungs-MacBook-Pro:data_engineering tung$
 
 ## Code build
 
-Sau khi download code và vào thư mục code của project, hãy build bằng ant, nhìn như thế này là bạn đã thành công.
+Sau khi download code tại bước trên.
+
+Next bạn vào thư mục code của project, dùng **ant** để build code, nhìn như thế này là bạn đã thành công.
 ```
 # hãy chắc là bạn có code version mới nhất
 Tungs-MacBook-Pro:data_engineering tung$ git pull origin master
