@@ -20,7 +20,7 @@ Thành viên team mình từng thắng Nhân Tài Đất Việt 2017 cho sản p
 
 Trước khi đến với BeeCost, chúng mình là đồng sáng lập mạng xã hội Phật tử [butta.vn](https://www.butta.vn) cùng Giáo Hội Phật Giáo Việt Nam, ra mắt tại Vesak 2019: sự kiện của Liên Hợp Quốc với hơn 20 nước tham gia.
 
-Những gì chúng mình làm là dùng công nghệ và dữ liệu để phục vụ người dùng internet, [BeeCost](https://www.beecost.com/install?utm_source=github&utm_medium=readme&pub=data_engineering_blog) cũng không phải là ngoại lệ, nó là một trợ lý mua sắm Online, mang tinh hoa của team mình từ các dự án đã làm.
+Những gì chúng mình làm là dùng công nghệ và dữ liệu để phục vụ người dùng internet, [BeeCost.Com](https://www.beecost.com/install?utm_source=github&utm_medium=readme&pub=data_engineering_blog) cũng không phải là ngoại lệ, nó là một trợ lý mua sắm Online, mang tinh hoa của team mình từ các dự án đã làm.
 
 **Và, project mở này là những phần cốt lõi đầu tiên nhất đã xây dựng nên [BeeCost](https://www.beecost.com/install?utm_source=github&utm_medium=readme&pub=data_engineering_blog).**
 
