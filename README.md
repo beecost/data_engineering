@@ -16,12 +16,12 @@ BeeCost Team cũng rất mong các nhận xét và đóng góp từ các bạn. 
 
 Project code này là một câu chuyện khá dài. BeeCost Team chúng mình là một team đam mê khoa học dữ liệu (Data Science).
 
-Thành viên team mình từng thắng Nhân Tài Đất Việt 2017 cho sản phẩm **Chống đạo văn sử dụng AI** đang được sử dụng tại các trường đại học. Một thành viên khác là một Data Scientist 12 năm kinh nghiệm, bạn ấy đã bán được 2 công ty dữ liệu và AI, tác giả của ChatBot ngân hàng MBBank và ví điện tử BUNO của BIDV Bank.
+Thành viên team mình từng thắng Nhân Tài Đất Việt 2017 cho sản phẩm **Chống đạo văn sử dụng AI** đang được sử dụng tại các trường đại học. Một thành viên khác là một Data Scientist 12 năm kinh nghiệm, bán được 2 công ty dữ liệu và AI, tác giả của ChatBot ngân hàng MBBank và ví điện tử BUNO của BIDV Bank.
 
-Trước khi đến với BeeCost, công ty chúng mình là đồng sáng lập mạng xã hội Phật tử [butta.vn](https://www.butta.vn) với Giáo Hội Phật Giáo Việt Nam, ra mắt tại Vesak 2019: sự kiện của Liên Hợp Quốc với hơn 20 nước tham gia.
+Trước khi đến với BeeCost, chúng mình là đồng sáng lập mạng xã hội Phật tử [butta.vn](https://www.butta.vn) cùng Giáo Hội Phật Giáo Việt Nam, ra mắt tại Vesak 2019: sự kiện của Liên Hợp Quốc với hơn 20 nước tham gia.
 
 Những gì chúng mình làm là dùng công nghệ và dữ liệu để phục vụ người dùng internet, BeeCost cũng không phải là ngoại lệ, nó mang tất cả tinh hoa của các dự án ở trên.
 
 **Và project mở này là những phần cốt lõi đầu tiên nhất đã xây dựng nên BeeCost.**
 
-Bạn có thể thử dùng để dự đoán được chất lượng của project tại [BeeCost.Com](https://www.beecost.com/install?utm_source=github&utm_medium=readme&pub=data_engineering_blog).
+Bạn có thể thử dùng thấy những dòng code tại đây đã tạo nên [BeeCost.Com](https://www.beecost.com/install?utm_source=github&utm_medium=readme&pub=data_engineering_blog) như thế nào nha.
